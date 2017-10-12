@@ -7,7 +7,6 @@ exports.login = function(params) {
 		if (req.session.loggedIn) {
 			res.redirect('/');
 		}
-        console.log(req.method)
 		if (req.method === 'POST') {
 			var email = req.body.email;
 			console.log(email)
